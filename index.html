@@ -5,33 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FRUIT BRUST</title>
-    <!-- ui  -->
+    <!-- tailwind css and ui  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.8.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind  -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        
+        .lato-font {
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 </head>
 
-<body>
+<body class="lato-font">
 
-    <head>
-
+    <head class="md:container md:mx-auto ">
+        <div class="hero min-h-screen" style="background-image: url(images/banner4.png);">
+            <div class="hero-overlay bg-opacity-20"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-extrabold text-white w-auto text-center">Exotic tastes at your
+                        doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn btn-error">Shop Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- banner part  -->
+        <div
+            class="mx-28 rounded-lg grid grid-cols-5 lg:drop-shadow  bg-white text-center -my-14 py-8 px-16 max-m-4xl ">
+            <div class="">
+                <img src="images/fruit1.png" alt="">
+                <p class="">Strawberry</p>
+            </div>
+            <div>
+                <img src="images/fruit2.png" alt="">
+                <p class="">Orange</p>
+            </div>
+            <div>
+                <img src="images/fruit3.png" alt="">
+                <p>Mango</p>
+            </div>
+            <div>
+                <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div>
+                <img src="images/fruit5.png" alt="">
+                <p class="">Mango</p>
+            </div>
+        </div>
     </head>
-    <main>
+    <main class="container mx-auto max-w-screen-lg">
+        <!-- the day  start -->
+        <section class="my-32">
+            <div class="flex justify-around  ">
+                <div>
+                    <h3 class="text-5xl font-extrabold mb-5">Deal of the day</h3>
+                    <p class="text-sm font-medium">Contrary to popular belief, is not simply random text. It has roots
+                        in a piece of classical
+                        <br>
+                        Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                </div>
+                <div class="grid grid-cols-5 gap-5 ">
+                    <div class="">
+                        <div class="flex ">
+                            <p class="">29</p>
+                            <p class="pl-5">:</p>
+                        </div>
+                        <p>Days</p>
+                    </div>
+                    <div class="">
+                        <div class="flex">
+                            <p>15</p>
+                            <p class="pl-5">:</p>
+                        </div>
+                        <p>Hours</p>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <p>25</p>
+                            <p class="pl-5">:</p>
+                        </div>
+                        <p class="">Minutes</p>
+                    </div>
+                    <div>
+                        <div class="flex">
+                            <p class="">08</p>
+                        </div>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
 
+        </section>
+        <!-- the day end  -->
+        <section class="my-12">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                    <img src="/images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                    <h2 class="card-title">12.90$ - 18.85$</h2>
+
+                    <hr>
+
+                    <p class="text-xl font-medium pt-2 text-slate-500">Apples</p>
+                    <div class="rating  w-[160px] h-[24px] rating-lg rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559]00 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559]mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    </div>
+                    <p class="pt-6">Details</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
